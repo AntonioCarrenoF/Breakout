@@ -22,4 +22,9 @@ public class Bloque : MonoBehaviour
         }
         
     }
+
+    public virtual void RebotarBola()
+    {
+
+    }
 }
