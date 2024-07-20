@@ -24,14 +24,16 @@ public class Jugador : MonoBehaviour
         //mousePos3d = Camera.main.ScreenToWorldPoint(mousePos2d);
 
 
-        if (Input.GetKey(KeyCode.RightArrow))
-        {
-            transform.Translate(Vector3.down * velocidadPaddle * Time.deltaTime); //time deltatime ayuda a que los objetos se muevan de forma suavizada
-        }
-        if (Input.GetKey(KeyCode.LeftArrow))
-        {
-            transform.Translate(Vector3.up * velocidadPaddle * Time.deltaTime);
-        }
+        //if (Input.GetKey(KeyCode.RightArrow))
+        //{
+        //    transform.Translate(Vector3.down * velocidadPaddle * Time.deltaTime); //time deltatime ayuda a que los objetos se muevan de forma suavizada
+        //}
+        //if (Input.GetKey(KeyCode.LeftArrow))
+        //{
+        //    transform.Translate(Vector3.up * velocidadPaddle * Time.deltaTime);
+        //}
+
+        transform.Translate(Input.GetAxis("Horizontal") * Vector3.down * velocidadPaddle * Time.deltaTime); //con esta linea de codigo nos podemos ahorrar lo demás
 
         Vector3 pos = transform.position;
         //pos.x = mousePos3d.x;
