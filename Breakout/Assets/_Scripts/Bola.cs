@@ -5,7 +5,7 @@ using UnityEngine;
 public class Bola : MonoBehaviour
 {
     public bool isGameStarted = false;
-    [SerializeField] public float velocidadBola=10f;
+    [SerializeField] public float velocidadBola=20f;
 
     // Start is called before the first frame update
     void Start()
@@ -20,7 +20,7 @@ public class Bola : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.Space) || Input.GetButton("Submit")) // la combinacion || significa or
+        if (Input.GetKey(KeyCode.Space) || Input.GetButton("Submit"))
         {
             if (!isGameStarted)
             {
