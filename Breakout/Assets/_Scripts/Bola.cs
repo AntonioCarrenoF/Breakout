@@ -5,7 +5,7 @@ using UnityEngine;
 public class Bola : MonoBehaviour
 {
     public bool isGameStarted = false;
-    [SerializeField] public float velocidadBola=10f;
+    [SerializeField] public float velocidadBola=20f;
 
     // Start is called before the first frame update
     void Start()
