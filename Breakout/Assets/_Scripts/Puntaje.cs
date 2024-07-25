@@ -9,8 +9,8 @@ public class Puntaje : MonoBehaviour
     public Transform transformPuntajeActual;
     public TMP_Text textoPuntajeAlto;
     public TMP_Text textoPuntajeActual;
-    public int puntos=0;
-    public int puntajeAlto=10000;
+    public int puntos = 0;
+    public int puntajeAlto = 10000;
 
     // Start is called before the first frame update
     void Start()
@@ -19,6 +19,10 @@ public class Puntaje : MonoBehaviour
         transformPuntajeAlto = GameObject.Find("PuntajeAlto").transform;
         textoPuntajeActual = transformPuntajeActual.GetComponent<TMP_Text>();
         textoPuntajeAlto = transformPuntajeAlto.GetComponent<TMP_Text>();
+        if (PlayerPrefs.HasKey("PuntajeAlto"))
+        {
+            puntajeAlto = PlayerPrefs.GetInt("PuntajeAlto");
+        }
 
     }
 
@@ -35,6 +39,8 @@ public class Puntaje : MonoBehaviour
         {
             puntajeAlto = puntos;
             textoPuntajeAlto.text = $"PuntajeAlto: {puntajeAlto}";
+            PlayerPrefs.SetInt("PuntajeAlto", puntos);
+
         }
 
     }
