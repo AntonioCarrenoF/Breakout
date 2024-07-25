@@ -191,7 +191,7 @@ GameObject:
   - component: {fileID: 334736205}
   - component: {fileID: 334736204}
   m_Layer: 5
-  m_Name: Puntaje Actual
+  m_Name: PuntajeActual
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -236,7 +236,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Puntaje Actual: 1000'
+  m_text: 'PuntajeActual: 0'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -869,7 +869,7 @@ GameObject:
   - component: {fileID: 1251938319}
   - component: {fileID: 1251938318}
   m_Layer: 5
-  m_Name: Puntaje Alto
+  m_Name: PuntajeAlto
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -914,7 +914,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Puntaje Alto: 1000'
+  m_text: 'PuntajeAlto: 10000'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1230,6 +1230,7 @@ GameObject:
   - component: {fileID: 1542167429}
   - component: {fileID: 1542167432}
   - component: {fileID: 1542167433}
+  - component: {fileID: 1542167434}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1350,6 +1351,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 846730db59d6d43b2835064f64eb8dc8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1542167434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1542167428}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b18af672c05c4ecea6e33182e39b6c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  transformPuntajeAlto: {fileID: 0}
+  transformPuntajeActual: {fileID: 0}
+  textoPuntajeAlto: {fileID: 0}
+  textoPuntajeActual: {fileID: 0}
+  puntos: 0
+  puntajeAlto: 10000
 --- !u!1 &1542814429
 GameObject:
   m_ObjectHideFlags: 0
