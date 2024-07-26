@@ -22,6 +22,7 @@ public class Puntaje : MonoBehaviour
         if (PlayerPrefs.HasKey("PuntajeAlto"))
         {
             puntajeAlto = PlayerPrefs.GetInt("PuntajeAlto");
+            textoPuntajeAlto.text = $"PuntajeAlto: {puntajeAlto}";
         }
 
     }
