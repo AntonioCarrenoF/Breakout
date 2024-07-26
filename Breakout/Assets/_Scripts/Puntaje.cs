@@ -9,8 +9,9 @@ public class Puntaje : MonoBehaviour
     public Transform transformPuntajeActual;
     public TMP_Text textoPuntajeAlto;
     public TMP_Text textoPuntajeActual;
-    public int puntos = 0;
-    public int puntajeAlto = 10000;
+    public PuntajeAlto puntajeAltoSO;
+    //public int puntos = 0;
+    //public int puntajeAlto = 10000;
 
     // Start is called before the first frame update
     void Start()
@@ -19,28 +20,33 @@ public class Puntaje : MonoBehaviour
         transformPuntajeAlto = GameObject.Find("PuntajeAlto").transform;
         textoPuntajeActual = transformPuntajeActual.GetComponent<TMP_Text>();
         textoPuntajeAlto = transformPuntajeAlto.GetComponent<TMP_Text>();
-        if (PlayerPrefs.HasKey("PuntajeAlto"))
-        {
-            puntajeAlto = PlayerPrefs.GetInt("PuntajeAlto");
-            textoPuntajeAlto.text = $"PuntajeAlto: {puntajeAlto}";
-        }
+        //if (PlayerPrefs.HasKey("PuntajeAlto"))
+        //{
+        //    //puntajeAlto = PlayerPrefs.GetInt("PuntajeAlto");
+        //    textoPuntajeAlto.text = $"PuntajeAlto: {puntajeAltoSO.puntajeAlto}";
+        //}
+        puntajeAltoSO.Cargar();
+        textoPuntajeAlto.text = $"PuntajeAlto: {puntajeAltoSO.puntajeAlto}";
+        puntajeAltoSO.puntaje = 0;
+
 
     }
 
     private void FixedUpdate()
     {
-        puntos += 50;
+        puntajeAltoSO.puntaje += 50;
     }
 
     // Update is called once per frame
     void Update()
     {
-        textoPuntajeActual.text = $"PuntajeActual: {puntos}";
-        if (puntos > puntajeAlto)
+        textoPuntajeActual.text = $"PuntajeActual: {puntajeAltoSO.puntaje}";
+        if (puntajeAltoSO.puntaje > puntajeAltoSO.puntajeAlto)
         {
-            puntajeAlto = puntos;
-            textoPuntajeAlto.text = $"PuntajeAlto: {puntajeAlto}";
-            PlayerPrefs.SetInt("PuntajeAlto", puntos);
+            puntajeAltoSO.puntajeAlto = puntajeAltoSO.puntaje;
+            textoPuntajeAlto.text = $"PuntajeAlto: {puntajeAltoSO.puntajeAlto}";
+            puntajeAltoSO.Guardar();
+            //PlayerPrefs.SetInt("PuntajeAlto", puntos);
 
         }
 
