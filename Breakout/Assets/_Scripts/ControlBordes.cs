@@ -18,7 +18,7 @@ public class ControlBordes : MonoBehaviour
     public void Awake()
     {
         altoCamara = Camera.main.orthographicSize;
-        anchoCamara = Camera.main.aspect * anchoCamara;
+        anchoCamara = Camera.main.aspect * altoCamara;
     }
 
     // Update is called once per frame
@@ -39,7 +39,7 @@ public class ControlBordes : MonoBehaviour
         }
         if (pos.y >altoCamara - radio)
         {
-            pos.y = altoCamara - radio;
+            pos.y = anchoCamara - radio;
             salioArriba = true;
         }
         if (pos.y < -altoCamara + radio)
@@ -58,7 +58,7 @@ public class ControlBordes : MonoBehaviour
     private void OnDrawGizmos()
     {
         if (!Application.isPlaying) return;
-        Vector3 tamanoBorde = new Vector3(anchoCamara = 2, altoCamara = 2, 0.1f);
+        Vector3 tamanoBorde = new Vector3(anchoCamara * 2, altoCamara * 2, 0.1f);
         Gizmos.DrawWireCube(Vector3.zero, tamanoBorde);
     }
 }
