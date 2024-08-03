@@ -418,6 +418,7 @@ GameObject:
   - component: {fileID: 362680898}
   - component: {fileID: 362680897}
   - component: {fileID: 362680896}
+  - component: {fileID: 362680899}
   m_Layer: 5
   m_Name: Dificultad
   m_TagString: Untagged
@@ -545,6 +546,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 362680894}
   m_CullTransparentMesh: 1
+--- !u!114 &362680899
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 362680894}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5359a787061b04e36bf81bcd1fe0b9a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  opciones: {fileID: 11400000, guid: f1919cfa68b5f4c5fb76703c407c3d55, type: 2}
 --- !u!1 &390338900
 GameObject:
   m_ObjectHideFlags: 0
@@ -1018,6 +1032,7 @@ GameObject:
   m_Component:
   - component: {fileID: 557023094}
   - component: {fileID: 557023095}
+  - component: {fileID: 557023096}
   m_Layer: 5
   m_Name: Velocidad
   m_TagString: Untagged
@@ -1091,13 +1106,26 @@ MonoBehaviour:
   m_FillRect: {fileID: 1488969916}
   m_HandleRect: {fileID: 1820969093}
   m_Direction: 0
-  m_MinValue: 0
-  m_MaxValue: 1
+  m_MinValue: 1
+  m_MaxValue: 100
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &557023096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 557023093}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68c3f37486fea4c8bb3babf137fc6c2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  opciones: {fileID: 11400000, guid: f1919cfa68b5f4c5fb76703c407c3d55, type: 2}
 --- !u!1 &572329613
 GameObject:
   m_ObjectHideFlags: 0
@@ -2444,6 +2472,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ObjetosAGuardar:
   - {fileID: 11400000, guid: efd408b79392c440b951fd5b36b8512d, type: 2}
+  - {fileID: 11400000, guid: f1919cfa68b5f4c5fb76703c407c3d55, type: 2}
 --- !u!4 &1301722548
 Transform:
   m_ObjectHideFlags: 0
