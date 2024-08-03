@@ -705,6 +705,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1248228580630658415, guid: c36f8557eff884bb696cb5cd99fcc8dd, type: 3}
+      propertyPath: velocidadBola
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 1248228580630658415, guid: c36f8557eff884bb696cb5cd99fcc8dd, type: 3}
       propertyPath: BolaDestruida.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 68378573}
