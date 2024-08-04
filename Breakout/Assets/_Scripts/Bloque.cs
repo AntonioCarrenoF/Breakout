@@ -8,6 +8,7 @@ public class Bloque : MonoBehaviour
 {
     public int resistencia = 1;
     public UnityEvent AumentarPuntaje;
+    public Opciones opciones;
 
 
     public void OnCollisionEnter(Collision collision)
@@ -30,7 +31,7 @@ public class Bloque : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
