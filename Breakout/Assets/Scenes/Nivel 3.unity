@@ -4347,7 +4347,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ObjetosAGuardar:
-  - {fileID: 11400000, guid: efd408b79392c440b951fd5b36b8512d, type: 2}
+  - {fileID: 11400000, guid: f9a606111294349d7bfed2d222ec9fe6, type: 2}
 --- !u!4 &1301722548
 Transform:
   m_ObjectHideFlags: 0
