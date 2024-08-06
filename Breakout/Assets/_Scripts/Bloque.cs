@@ -31,7 +31,20 @@ public class Bloque : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        if ((int)opciones.NivelDificultad == 0)
+        {
+            resistencia = resistencia * 1;
+        }
+        if ((int)opciones.NivelDificultad == 1)
+        {
+            resistencia = resistencia * 2;
+        }
+        if ((int)opciones.NivelDificultad == 3)
+        {
+            resistencia = resistencia * 3;
+        }
 
+     
     }
 
     // Update is called once per frame

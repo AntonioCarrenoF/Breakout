@@ -11,6 +11,7 @@ public class SliderVelocidad : MonoBehaviour
     public void Start()
     {
         slider = this.GetComponent<Slider>();
+        slider.value = (int)opciones.velocidadBola;
         slider.onValueChanged.AddListener(delegate { ControlarCambios(); });
 
     }

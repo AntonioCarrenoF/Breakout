@@ -639,6 +639,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1248228580630658415, guid: c36f8557eff884bb696cb5cd99fcc8dd, type: 3}
+      propertyPath: opciones
+      value: 
+      objectReference: {fileID: 11400000, guid: f1919cfa68b5f4c5fb76703c407c3d55, type: 2}
+    - target: {fileID: 1248228580630658415, guid: c36f8557eff884bb696cb5cd99fcc8dd, type: 3}
       propertyPath: velocidadBola
       value: 25
       objectReference: {fileID: 0}
@@ -1584,6 +1588,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1843527485}
     m_Modifications:
+    - target: {fileID: -3186725296346435891, guid: 13ed911f9657d408897dfa82eaa4d8ac, type: 3}
+      propertyPath: opciones
+      value: 
+      objectReference: {fileID: 11400000, guid: f1919cfa68b5f4c5fb76703c407c3d55, type: 2}
     - target: {fileID: -3186725296346435891, guid: 13ed911f9657d408897dfa82eaa4d8ac, type: 3}
       propertyPath: AumentarPuntaje.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -2873,6 +2881,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6718261196832422124, guid: 180796b5c6e8844a98f44bed1126c0d5, type: 3}
+      propertyPath: opciones
+      value: 
+      objectReference: {fileID: 11400000, guid: f1919cfa68b5f4c5fb76703c407c3d55, type: 2}
+    - target: {fileID: 6718261196832422124, guid: 180796b5c6e8844a98f44bed1126c0d5, type: 3}
       propertyPath: AumentarPuntaje.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1542167434}
@@ -3261,6 +3273,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1843527485}
     m_Modifications:
+    - target: {fileID: 1755983075658104790, guid: 6c29989fe20864dbc8c3fd7d6c5b6b15, type: 3}
+      propertyPath: opciones
+      value: 
+      objectReference: {fileID: 11400000, guid: f1919cfa68b5f4c5fb76703c407c3d55, type: 2}
     - target: {fileID: 1755983075658104790, guid: 6c29989fe20864dbc8c3fd7d6c5b6b15, type: 3}
       propertyPath: AumentarPuntaje.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -3864,6 +3880,10 @@ PrefabInstance:
       value: Bloque_Hielo
       objectReference: {fileID: 0}
     - target: {fileID: 3506137607657012561, guid: 4841149e012e74d34aa870694a6bb694, type: 3}
+      propertyPath: opciones
+      value: 
+      objectReference: {fileID: 11400000, guid: f1919cfa68b5f4c5fb76703c407c3d55, type: 2}
+    - target: {fileID: 3506137607657012561, guid: 4841149e012e74d34aa870694a6bb694, type: 3}
       propertyPath: AumentarPuntaje.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1542167434}
@@ -4409,6 +4429,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ObjetosAGuardar:
   - {fileID: 11400000, guid: efd408b79392c440b951fd5b36b8512d, type: 2}
+  - {fileID: 11400000, guid: f1919cfa68b5f4c5fb76703c407c3d55, type: 2}
 --- !u!4 &1301722548
 Transform:
   m_ObjectHideFlags: 0
@@ -6285,6 +6306,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1843527485}
     m_Modifications:
+    - target: {fileID: -2152330591408515286, guid: 3a3966762f34b4d8599437b975dede9c, type: 3}
+      propertyPath: opciones
+      value: 
+      objectReference: {fileID: 11400000, guid: f1919cfa68b5f4c5fb76703c407c3d55, type: 2}
     - target: {fileID: -2152330591408515286, guid: 3a3966762f34b4d8599437b975dede9c, type: 3}
       propertyPath: AumentarPuntaje.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 

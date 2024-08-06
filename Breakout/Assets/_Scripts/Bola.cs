@@ -29,7 +29,8 @@ public class Bola : MonoBehaviour
         this.transform.position = posicionInicial;
         this.transform.SetParent(GameObject.FindGameObjectWithTag("Jugador").transform);
         rigidbody = this.gameObject.GetComponent<Rigidbody>();
-        
+        velocidadBola = opciones.velocidadBola;
+
     }
 
     // Update is called once per frame

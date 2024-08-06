@@ -837,6 +837,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1248228580630658415, guid: c36f8557eff884bb696cb5cd99fcc8dd, type: 3}
+      propertyPath: opciones
+      value: 
+      objectReference: {fileID: 11400000, guid: f1919cfa68b5f4c5fb76703c407c3d55, type: 2}
+    - target: {fileID: 1248228580630658415, guid: c36f8557eff884bb696cb5cd99fcc8dd, type: 3}
       propertyPath: velocidadBola
       value: 25
       objectReference: {fileID: 0}
@@ -3658,6 +3662,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1843527485}
     m_Modifications:
     - target: {fileID: 1755983075658104790, guid: 6c29989fe20864dbc8c3fd7d6c5b6b15, type: 3}
+      propertyPath: opciones
+      value: 
+      objectReference: {fileID: 11400000, guid: f1919cfa68b5f4c5fb76703c407c3d55, type: 2}
+    - target: {fileID: 1755983075658104790, guid: 6c29989fe20864dbc8c3fd7d6c5b6b15, type: 3}
       propertyPath: AumentarPuntaje.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1542167434}
@@ -4937,6 +4945,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ObjetosAGuardar:
   - {fileID: 11400000, guid: 955334f71a921491684fa8066b257f25, type: 2}
+  - {fileID: 11400000, guid: f1919cfa68b5f4c5fb76703c407c3d55, type: 2}
 --- !u!4 &1301722548
 Transform:
   m_ObjectHideFlags: 0
