@@ -19,6 +19,15 @@ public class Bloque : MonoBehaviour
         }
     }
 
+    /**
+     * Funcion para rebotar la bola cuando coalisione con un bloque, \n en este caso se hace virtual para que otros objetos puedan \n
+     * heredar y hacer una sobrecarga al method
+     * 
+     * _Parametros_
+     * __Colision__ : _el objeto con el que se ha detectado una colisión en el OnColisionEnter_
+     * 
+     */
+
     public virtual void RebotarBola(Collision collision)
     {
         Vector3 direccion = collision.contacts[0].point - transform.position;
